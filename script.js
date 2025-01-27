@@ -178,15 +178,23 @@ createimgdiv();
 
 function createimgdiv() {
   for (asset of Assets) {
+    const GalleryDev = document.createElement("div");
     const containerDev = document.createElement("div");
     const link = document.createElement("a");
     const img = document.createElement("img");
     link.appendChild(img);
-    containerDev.appendChild(link);
-    Gallery.appendChild(containerDev);
+    GalleryDev.appendChild(link);
+    Gallery.appendChild(GalleryDev);
     link.setAttribute("target", "_blank");
-    img.classList.add("rounded-lg");
-    containerDev.classList.add("flex", "max-w-lg", "rounded-lg");
+    Gallery.classList.add(
+      "mt-5",
+      "grid",
+      "gap-4",
+      "grid-cols-4",
+      "justify-around"
+    );
+    img.classList.add("rounded-lg", "box-border", "h-full", "w-full");
+    GalleryDev.classList.add("flex", "max-w-lg", "rounded-lg");
     link.setAttribute("href", asset);
     img.setAttribute("src", asset);
   }
