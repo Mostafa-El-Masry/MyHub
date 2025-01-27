@@ -1,30 +1,37 @@
 const Name = "Mostafa";
-
-let videos = [
-  "../../../../Assets/Porn/Abbey Rain - Don’t Tell My Manager!.mp4",
-  "../../../../Assets/Porn/Abbey Rain - Don’t Tell My Manager!.mp4",
-  "../../../../Assets/Porn/Abbey Rain - Don’t Tell My Manager!.mp4",
-];
-
 const Gallery = document.querySelector(".gallery");
 
-// alert("hello " + Name);
-function Main() {
-  this.video = document.createElement("video");
-  this.video.controls = true;
-  this.video.autoplay = true;
-  this.video.loop = true;
-  this.video.muted = true;
+let Assets = [
+  "../Assets/1.jpg",
+  "../Assets/2.jpg",
+  "../Assets/3.jpg",
+  "/Assets/4.jpg",
+  "/Assets/5.jpg",
+  "/Assets/6.jpg",
+  "/Assets/7.jpg",
+  "/Assets/8.jpg",
+  "/Assets/9.jpg",
+  "/Assets/10.jpg",
+];
 
-  this.source1 = document.createElement("source");
-  this.source1.setAttribute("src", "E:/Porn/1.mp4");
-  this.source1.setAttribute("type", "video/mp4");
+createimgdiv();
 
-  this.video.classList.add("rounded-lg");
-
-  this.video.appendChild(this.source1);
-
-  Gallery.appendChild(this.video);
+function createimgdiv() {
+  for (let i = 0; i <= Assets.length; i++) {
+    const containerDev = document.createElement("div");
+    const img = document.createElement("img");
+    containerDev.appendChild(img);
+    Gallery.appendChild(containerDev);
+    img.classList.add("rounded-lg");
+    containerDev.classList.add("flex", "max-w-lg", "rounded-lg");
+    img.src = Assets[i];
+  }
 }
 
-var main = new Main();
+// chooseAsset();
+// function chooseAsset() {
+//   for (Asset of Assets) {
+//     return (img.src = Asset);
+//     console.log(img.src);
+//   }
+// }
