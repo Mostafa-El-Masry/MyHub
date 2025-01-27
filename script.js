@@ -177,7 +177,7 @@ let Assets = [
 createimgdiv();
 
 function createimgdiv() {
-  for (let i = 0; i <= Assets.length; i++) {
+  for (asset of Assets) {
     const containerDev = document.createElement("div");
     const link = document.createElement("a");
     const img = document.createElement("img");
@@ -187,7 +187,7 @@ function createimgdiv() {
     link.setAttribute("target", "_blank");
     img.classList.add("rounded-lg");
     containerDev.classList.add("flex", "max-w-lg", "rounded-lg");
-    link.setAttribute("href", Assets[i]);
-    img.src = Assets[i];
+    link.setAttribute("href", asset);
+    img.setAttribute("src", asset);
   }
 }
