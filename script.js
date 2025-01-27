@@ -193,7 +193,7 @@ function createimgdiv() {
       "grid-cols-4",
       "justify-around"
     );
-    img.classList.add("rounded-lg", "box-border", "h-full", "w-full");
+    img.classList.add("rounded-lg", "box-border");
     GalleryDev.classList.add("flex", "max-w-lg", "rounded-lg");
     link.setAttribute("href", asset);
     img.setAttribute("src", asset);
