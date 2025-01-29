@@ -11,9 +11,6 @@ let Assets = [
   "/Assets/gif (5).gif",
   "/Assets/gif (6).gif",
   "/Assets/gif (7).gif",
-  "/Assets/gif (8).gif",
-  "/Assets/gif (9).gif",
-  "/Assets/gif (10).gif",
   "/Assets/jpg (1).jpg",
   "/Assets/jpg (2).jpg",
   "/Assets/jpg (3).jpg",
@@ -189,8 +186,8 @@ function createimgdiv() {
     Gallery.classList.add(
       "mt-5",
       "grid",
-      "gap-4",
-      "grid-cols-4",
+      "gap-6",
+      "grid-cols-3",
       "justify-around"
     );
     img.classList.add("rounded-lg", "box-border");
