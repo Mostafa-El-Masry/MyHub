@@ -3,12 +3,6 @@
 
 // Array of Assets
 let Assets = [
-  "/Assets/gif (2).gif",
-  "/Assets/gif (3).gif",
-  "/Assets/gif (4).gif",
-  "/Assets/gif (5).gif",
-  "/Assets/gif (6).gif",
-  "/Assets/gif (7).gif",
   "/Assets/jpg (1).jpg",
   "/Assets/jpg (2).jpg",
   "/Assets/jpg (3).jpg",
@@ -167,6 +161,12 @@ let Assets = [
   "/Assets/jpg (156).jpg",
   "/Assets/jpg (157).jpg",
   "/Assets/jpg (158).jpg",
+  "/Assets/gif (2).gif",
+  "/Assets/gif (3).gif",
+  "/Assets/gif (4).gif",
+  "/Assets/gif (5).gif",
+  "/Assets/gif (6).gif",
+  "/Assets/gif (7).gif",
 ];
 
 // Assets.forEach((Assestsrc) => {
