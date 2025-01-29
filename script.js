@@ -1,10 +1,8 @@
-const Name = "Mostafa";
-const Gallery = document.querySelector(".gallery");
+// const Name = "Mostafa";
+// const Gallery = document.querySelector(".gallery");
 
+// Array of Assets
 let Assets = [
-  "/Assets/webp (1).webp",
-  "/Assets/webp (2).webp",
-  "/Assets/gif (1).gif ",
   "/Assets/gif (2).gif",
   "/Assets/gif (3).gif",
   "/Assets/gif (4).gif",
@@ -171,28 +169,38 @@ let Assets = [
   "/Assets/jpg (158).jpg",
 ];
 
-createimgdiv();
+// Assets.forEach((Assestsrc) => {
+//   const GalleryDev = document.createElement("div");
+//   const link = document.createElement("a");
+//   const img = document.createElement("img");
+//   link.appendChild(img);
+//   GalleryDev.appendChild(link);
+//   Gallery.appendChild(GalleryDev);
+//   link.setAttribute("target", "_blank");
+//   Gallery.classList.add(
+//     "mt-5",
+//     "grid",
+//     "gap-6",
+//     "grid-cols-3",
+//     "justify-around"
+//   );
+//   img.onload = () => {
+//     const span = Math.ceil(img.naturalHeight / 10); // Calculate span based on image height
+//     img.style.gridRowEnd = `span ${span}`;
+//   };
 
-function createimgdiv() {
-  for (asset of Assets) {
-    const GalleryDev = document.createElement("div");
-    const containerDev = document.createElement("div");
-    const link = document.createElement("a");
-    const img = document.createElement("img");
-    link.appendChild(img);
-    GalleryDev.appendChild(link);
-    Gallery.appendChild(GalleryDev);
-    link.setAttribute("target", "_blank");
-    Gallery.classList.add(
-      "mt-5",
-      "grid",
-      "gap-6",
-      "grid-cols-3",
-      "justify-around"
-    );
-    img.classList.add("rounded-lg", "box-border");
-    GalleryDev.classList.add("flex", "max-w-lg", "rounded-lg");
-    link.setAttribute("href", asset);
-    img.setAttribute("src", asset);
-  }
-}
+//   img.classList.add("rounded-lg", "box-border");
+//   GalleryDev.classList.add("flex", "max-w-lg", "rounded-lg");
+//   link.setAttribute("href", Assestsrc);
+//   img.setAttribute("src", Assestsrc);
+// });
+// Reference to the gallery container
+
+// Dynamically create image elements and append them to the gallery
+const gallery = document.getElementById("gallery");
+
+Assets.forEach((asset) => {
+  const img = document.createElement("img");
+  img.setAttribute("src", asset);
+  gallery.appendChild(img);
+});
