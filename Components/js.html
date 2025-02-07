@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-100" lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="styles.css" rel="stylesheet" />
+    <title>Java Script</title>
+</head>
+
+<body class="h-full">
+    <nav class="flex bg-gray-800 w-full text-gray-200">
+        <div class="hero ml-20 flex">
+            <a href="/index.html" class="p-4">
+                <h1 class="text-xl">MY HUB</h1>
+            </a>
+            <a href="/Components/PornLib.html" class="p-4">
+                <h2 class="text-xl">Porn Library</h2>
+            </a>
+            <a href="/Components/videogallery.html" class="p-4">
+                <h2 class="text-xl">Video Gallery</h2>
+            </a>
+            <a href="/Components/SlideImges.html" class="p-4">
+                <h2 class="text-xl">Slide Images</h2>
+            </a>
+            <a href="/Components/Money.html" class="p-4">
+                <h2 class="text-xl">Money</h2>
+            </a>
+            <a href="/Components/js.html" class="p-4">
+                <h2 class="text-xl">Java Script</h2>
+            </a>
+        </div>
+    </nav>
+
+    <main class="container m-auto">
+        <section>
+            <div class="flex flex-col p-4 m-4">
+                <p>Factory functions</p>
+                <p>
+                <pre>
+                    function creatObject(att){
+                        return {
+                            att,
+                            draw(){
+                                console.log("draw");
+                            }
+                        }
+                    }
+
+                    const object = creatObject(att);
+                    </pre>
+                </p>
+            </div>
+
+            <div class="flex flex-col p-4 m-4">
+                <p>Constructor functions</p>
+                <p>
+                <pre>
+                    function CreatObject(att){
+                        this.att = att
+                        this.draw = function (){
+                                console.log("draw");
+                            }
+                        }
+
+                        const object = new CreatObject(att);
+                    </pre>
+                </p>
+            </div>
+
+        </section>
+    </main>
+</body>
+
+</html>
