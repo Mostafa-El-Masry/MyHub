@@ -1,6 +1,8 @@
+/* General Reset */
 * {
-    padding: 0;
-    margin: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,14 +11,20 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f8f9fa;
+  color: #333;
+  min-height: 100vh;
 }
 
-.gallery {
+
+
+/*   PornLib Styles   */
+
+.imggallery {
     column-count: 3;
     margin-top: .5rem;
     width: 75vw;
 }
-.gallery img {
+.imggallery img {
     margin-bottom: 1rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
@@ -27,14 +35,14 @@ body {
     transition: transform 0.8s ease, box-shadow 0.3s ease;
 }
 
-.gallery img:hover {
+.imggallery img:hover {
   transform: scale(1.3);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   z-index: 2;
 }
 
 @media (max-width: 768px) {
-  .gallery {
+  .imggallery {
     column-count: 2;
     grid-template-columns: 2fr; /* Single-column layout on small screens */
     grid-template-columns: repeat(
@@ -46,10 +54,69 @@ body {
 }
 
 @media (max-width: 480px) {
-  .gallery {
+  .imggallery {
     column-count: 1;
     grid-template-columns: 1fr; /* Single-column layout on small screens */
     padding: 8px;
   }
 }
 
+
+/*   Video Gallery   */
+
+/* Gallery Container */
+.gallery-container {
+  text-align: center;
+  width: 100%;
+  max-width: 70vw;
+  padding: 20px;
+}
+
+.gallery-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Video Gallery */
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 25px;
+}
+
+/* Video Wrapper */
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #000;
+  transition: transform 0.3s ease-in-out;
+}
+
+.video-wrapper:hover {
+  transform: scale(1.2);
+}
+
+/* Video Element */
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom Effect on Play */
+.video-wrapper video:playing {
+  transform: scale(1.1);
+}
+
+.ParaElement{
+  text-align: center;
+  position: fixed;
+  margin: 0.5rem;
+  font-size: 1rem;
+
+}

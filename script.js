@@ -1,7 +1,7 @@
 // const Name = "Mostafa";
 
 // Reference to the gallery container
-const gallery = document.querySelector(".gallery");
+const imgGallery = document.querySelector(".imggallery");
 
 // Array of Assets
 let Assets = [
@@ -171,7 +171,7 @@ let Assets = [
   "/Assets/gif (7).gif",
 ];
 
-// Dynamically create image elements and append them to the gallery
+// Dynamically create image elements and append them to the imgGallery
 Assets.forEach((Assestsrc) => {
   const GalleryDev = document.createElement("div");
   const link = document.createElement("a");
@@ -179,9 +179,9 @@ Assets.forEach((Assestsrc) => {
 
   link.appendChild(img);
   GalleryDev.appendChild(link);
-  gallery.appendChild(GalleryDev);
+  imgGallery.appendChild(GalleryDev);
   link.setAttribute("target", "_blank");
-  gallery.classList.add("mt-5", "justify-around");
+  imgGallery.classList.add("mt-5", "justify-around");
 
   img.classList.add("rounded-lg", "box-border");
   GalleryDev.classList.add("flex", "max-w-lg", "rounded-lg");
