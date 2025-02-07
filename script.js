@@ -7,8 +7,6 @@ const imgGallery = document.querySelector(".imggallery");
 let Assets = [
   "/Assets/jpg (1).jpg",
   "/Assets/jpg (2).jpg",
-  "/Assets/jpg (3).jpg",
-  "/Assets/jpg (4).jpg",
   "/Assets/jpg (5).jpg",
   "/Assets/jpg (6).jpg",
   "/Assets/jpg (7).jpg",
@@ -20,7 +18,6 @@ let Assets = [
   "/Assets/jpg (13).jpg",
   "/Assets/jpg (14).jpg",
   "/Assets/jpg (15).jpg",
-  "/Assets/jpg (16).jpg",
   "/Assets/jpg (17).jpg",
   "/Assets/jpg (18).jpg",
   "/Assets/jpg (19).jpg",
@@ -163,10 +160,7 @@ let Assets = [
   "/Assets/jpg (156).jpg",
   "/Assets/jpg (157).jpg",
   "/Assets/jpg (158).jpg",
-  "/Assets/gif (2).gif",
   "/Assets/gif (3).gif",
-  "/Assets/gif (4).gif",
-  "/Assets/gif (5).gif",
   "/Assets/gif (6).gif",
   "/Assets/gif (7).gif",
 ];
