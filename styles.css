@@ -148,6 +148,13 @@ input[type="checkbox"]{
   html{
       font-size: 12pt;
   }
+  /* .TodoWrapper{
+    margin: 0 auto;
+  } */
+  .todo{
+    width: 100%;
+    justify-self: center;
+  }
   #add-button{
       position: unset;
       width: 100%;
