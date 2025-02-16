@@ -16,7 +16,6 @@
 
 html{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 16pt;
   color: var(--text-color);
 }
 
@@ -33,6 +32,7 @@ body {
 /*          TO DO LIST        */
 
 .TodoWrapper{
+  font-size: 16pt;
   min-height: 50vh;
   padding: 10px;
   background-color: var(--background);
@@ -42,6 +42,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  color: #f8f9fa;
 }
 
 .TodoWrapper h1{
@@ -75,7 +76,6 @@ form{
   position: absolute;
   top: 0;
   right: 0;
-
   background-color: var(--accent-color);
   height: 100%;
   padding: 0 30px;
@@ -87,12 +87,15 @@ form{
   cursor: pointer;
 }
 .todo{
+  justify-self: center;
   margin-bottom: 10px;
   padding: 0 16px;
   background-color: var(--primary-color);
   border-radius: 15px;
   display: flex;
   align-items: center;
+  min-width: 200%;
+  
 }
 .todo .todo-text{
   padding: 15px;
