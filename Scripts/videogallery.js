@@ -183,7 +183,7 @@ videoPaths.forEach((videoPath) => {
   const videoElement = document.createElement("video");
   videoElement.src = "../Porn/" + videoPath;
   videoElement.controls = true;
-  videoElement.setAttribute("preload", "none");
+  videoElement.setAttribute("preload", "metadata");
 
   // Create a Para element
   const ParaElement = document.createElement("p");
