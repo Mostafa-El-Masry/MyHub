@@ -171,9 +171,9 @@ Assets.forEach((Assestsrc) => {
   const link = document.createElement("a");
   const img = document.createElement("img");
 
-  link.appendChild(img);
-  GalleryDev.appendChild(link);
-  imgGallery.appendChild(GalleryDev);
+  link.append(img);
+  GalleryDev.append(link);
+  imgGallery.append(GalleryDev);
   link.setAttribute("target", "_blank");
   imgGallery.classList.add("mt-5", "justify-around");
 
