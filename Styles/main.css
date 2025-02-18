@@ -32,10 +32,11 @@ body {
   min-height: 100vh;
 }
 
+
 /*          TO DO LIST        */
 
 .TodoWrapper{
-  font-size: 16pt;
+  font-size: 10pt;
   min-height: 50vh;
   max-height: 80vh;
   padding: 10px;
