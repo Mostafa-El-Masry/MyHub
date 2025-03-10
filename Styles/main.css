@@ -257,7 +257,7 @@ h1{
 .gallery-container {
   text-align: center;
   width: 100%;
-  max-width: 70vw;
+  max-width: 90vw;
   padding: 20px;
 }
 
@@ -270,7 +270,7 @@ h1{
 .gallery {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
   gap: 25px;
 }
 
@@ -282,6 +282,7 @@ h1{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #000;
   transition: transform 0.3s ease-in-out;
+  
 }
 
 .video-wrapper:hover {
@@ -296,6 +297,7 @@ h1{
   display: block;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
+  max-height: 14rem;
 }
 
 /* Zoom Effect on Play */
@@ -304,10 +306,12 @@ h1{
 }
 
 .ParaElement{
-  text-align: center;
-  position: fixed;
-  margin: 0.5rem;
+  position: absolute;
+  top: 0;
+  margin: 0.5rem 1rem;
   font-size: 1rem;
-
+  color: #FFF;
+  justify-self: center;
+  text-align: center;
 }
 
