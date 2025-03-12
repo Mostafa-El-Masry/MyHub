@@ -30,16 +30,22 @@ productsarray.forEach(([index, product, qty]) => {
   productName.innerText = product;
   productQty.innerText = qty;
 
-  productIndex.style.border = "solid #000000";
-  productIndex.style.margin = "5px";
-  productName.style.border = "solid #000000";
-  productName.style.margin = "5px";
-  productQty.style.border = "solid #000000";
-  productQty.style.margin = "5px";
-  productIndex.style.display = "inline";
-  productName.style.display = "inline";
-  productQty.style.display = "inline";
-  productDev.style.display = "block";
+  productIndex.setAttribute(
+    "class",
+    "me-4 hover:underline md:me-6  justify-start"
+  );
+  productName.setAttribute(
+    "class",
+    "me-4 hover:underline md:me-6 justify-start"
+  );
+  productQty.setAttribute(
+    "class",
+    "me-4 hover:underline md:me-6 justify-start"
+  );
+  productDev.setAttribute(
+    "class",
+    "flex flex-row gap-4 items-center m-2 p-2 justify-between max-w-lg text-gray-900 dark:text-white bg-gray-300"
+  );
 
   productsUL.append(productDev);
 
